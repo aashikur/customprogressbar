@@ -8,7 +8,7 @@ Get in Github:
 https://github.com/aashikur/customprogressbar/
 
 
-demo link:
+<strong>demo link:</strong>
 https://aashikur.github.io/customprogressbar/
 
 
