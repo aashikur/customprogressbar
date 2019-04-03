@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <section class='text-center'>
+        <h1 class=''>Progress bar Custom Jquery | Start the function after <strong>visible</strong> the Section!</h1>
+        <h1>Start <strong class='text-danger'>Scroll The Page</strong> to see Effect!</h1>
+    </section>
+
+
+
+
+      <!--Progress Bar Start-->
+    <section id="progress">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+<div class="progress">
+<div class="progress-bar "  data-value="90"></div>
+</div>
+
+<div class="progress">
+<div class="progress-bar "  data-value="50"></div>
+</div>
+
+<div class="progress">
+<div class="progress-bar "  data-value="70"></div>
+</div>
+
+<div class="progress">
+<div class="progress-bar "  data-value="40"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="90"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="20"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="60"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="70"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="65"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="88"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="94"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="85"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="52"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="100"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="90"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="50"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="80"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="70"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="10"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="30"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="60"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="95"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="80"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="66"></div>
+</div>
+
+
+<div class="progress">
+<div class="progress-bar "  data-value="99"></div>
+</div>
+
+
+
+            
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="bg-info" style='padding-bottom:1000px;'></section>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    
+
+    <script>
+        // Progress bar Scripts
+      $(window).scroll(function(){
+            $(".progress-bar").each(function(){
+
+                // take value from bottom screen of windows // take Value of Bottom of Windows // take Indivisual value of Progress Bar
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight(); 
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                var myVal = $(this).attr("data-value");
+
+                if(bottom_of_object < bottom_of_window) {
+                    $(this).css("width" , myVal + "%");
+                }
+
+            });
+        });
+
+
+
+    
+    </script>
+</body>
+</html>
